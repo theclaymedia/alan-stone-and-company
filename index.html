@@ -188,7 +188,7 @@
     .principles dd { margin: 0; color: var(--muted); font-size: 1rem; }
 
     /* Services */
-    .services { background: var(--white); }
+    .services { background: var(--paper); }
     .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
     .service { padding: 36px 32px 40px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .service-num { font-family: var(--serif); font-size: 0.95rem; color: var(--gold-text); letter-spacing: 0.1em; display: block; margin-bottom: 18px; }
@@ -198,6 +198,7 @@
     .service li + li { margin-top: 4px; }
 
     /* Approach */
+    #approach { background: var(--white); }
     .approach-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
     .steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
     .steps li { display: grid; grid-template-columns: 64px 1fr; gap: 18px; padding: 26px 0; border-top: 1px solid var(--line); counter-increment: step; }
@@ -205,7 +206,7 @@
     .steps li::before { content: counter(step, decimal-leading-zero); font-family: var(--serif); font-size: 1.9rem; color: var(--gold-text); line-height: 1; padding-top: 4px; }
     .steps h3 { font-size: 1.3rem; margin-bottom: 6px; color: var(--navy); }
     .steps p { margin: 0; color: var(--muted); font-size: 1rem; }
-    .aims { margin-top: 28px; background: var(--white); border: 1px solid var(--line); padding: 28px 30px; }
+    .aims { margin-top: 28px; background: var(--paper); border: 1px solid var(--line); padding: 28px 30px; }
     .aims h3 { font-size: 1.2rem; color: var(--navy); margin-bottom: 14px; }
     .aims ul { margin: 0; columns: 2; column-gap: 28px; padding-left: 1.1em; color: var(--muted); font-size: 0.98rem; }
     .aims li { break-inside: avoid; margin-bottom: 6px; }
@@ -225,6 +226,7 @@
 
     /* Results */
     .results { background: var(--white); }
+    #team { background: var(--paper); }
     .case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .case { border: 1px solid var(--line); padding: 30px 28px 32px; background: var(--paper); display: flex; flex-direction: column; }
     .case .figure { font-family: var(--serif); font-size: clamp(2rem, 3vw, 2.6rem); line-height: 1; color: var(--navy); margin-bottom: 6px; }
@@ -238,8 +240,10 @@
     .client-list li { padding: 6px 0; border-bottom: 1px solid var(--line); }
     .disclaimer { margin-top: 28px; font-size: 0.88rem; color: var(--muted); max-width: 80ch; }
 
-    /* Team */
-    .founder { display: grid; grid-template-columns: 300px 1fr; gap: clamp(32px, 5vw, 72px); align-items: start; margin-bottom: clamp(48px, 6vw, 80px); }
+    /* Founder */
+    .founder-section { background: var(--white); }
+    .founder-section h2 { max-width: 24ch; margin-bottom: clamp(32px, 4vw, 48px); }
+    .founder { display: grid; grid-template-columns: 300px 1fr; gap: clamp(32px, 5vw, 72px); align-items: start; margin-bottom: 0; }
     .founder-photo { margin: 0; }
     .founder-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border: 1px solid var(--line); background: var(--paper-deep); }
     .founder-photo figcaption { font-size: 0.82rem; color: var(--muted); margin-top: 10px; }
@@ -408,7 +412,7 @@
             <p>We have represented many public companies across a wide range of business sectors. Because of our extensive contacts and long standing relationships within the investment community, our clients have greatly expanded their positioning with institutional investors, brokerage firms, market makers, analysts and individual investors.</p>
             <p>Our focus on aggressively communicating each client's achievements and corporate strategy, supported by our own internal research and delivered in a targeted manner, establishes positive sentiment among Wall Street professionals. Working through an extensive network of investors built over a twenty five year career on Wall Street, the firm is a formidable link to the capital markets for emerging publicly traded companies.</p>
             <p>After a successful career in New York City, the firm relocated to Los Angeles in 1989 to expand investor relations on the West Coast, and broadened its presence to the Florida investment community in 1999. ASC continues to maintain a significant presence on Wall Street and in Palm Beach.</p>
-            <p><a href="#team">Read about our management and advisory board</a></p>
+            <p><a href="#alan-stone">Read about Alan Stone</a> or <a href="#team">meet our associates and advisory board</a></p>
           </div>
           <div class="firm-photo">
             <figure>
@@ -446,6 +450,31 @@
               <dd>We strive to produce results that are measurable: increased analyst sponsorship, a broader investor base and positive exposure in the Wall Street community.</dd>
             </div>
           </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section founder-section" id="alan-stone" aria-labelledby="founder-title">
+      <div class="container">
+        <span class="eyebrow">Managing Director</span>
+        <h2 id="founder-title">Led by Alan Stone, a career on Wall Street brought to emerging companies</h2>
+        <div class="founder">
+          <figure class="founder-photo">
+            <img src="assets/legacy/management2nd-large.jpg" alt="Portrait of Alan Stone, Managing Director, in a suit and tie" width="396" height="486" loading="lazy">
+            <figcaption>Alan Stone, Managing Director</figcaption>
+          </figure>
+          <div>
+            <h3>Alan Stone</h3>
+            <div class="role">Managing Director, Alan Stone &amp; Company, LLC</div>
+            <p>During the past decades, Alan Stone &amp; Company, LLC has become one of the top ranked investor relations firms serving emerging companies. Throughout his career Alan Stone has been involved in a wide variety of investor relations, investment banking, corporate finance, and merger and acquisition activities, arranging numerous $2 to $20 million financing and merger transactions for NYSE, AMEX, NASDAQ and OTC listed companies.</p>
+            <p>Mr. Stone represented the American Stock Exchange as Director of the Los Angeles AMEX Corporate Focus and Security Analyst Forum, a private group of investment brokers, money managers, investment bankers and analysts, arranging regular luncheon meetings at the Jonathan Club and the Beverly Regent Wilshire Hotel for AMEX, NYSE and NASDAQ listed companies.</p>
+            <p>He was an analyst and assistant portfolio manager of Merrill Lynch Asset Management's $250 million high yield Corporate Bond Fund, one of the largest buyers of corporate stocks and bonds on Wall Street, and later joined Merrill Lynch's brokerage subsidiary in money management for individuals, corporations, pension funds and institutions. He was also associated with Thomson McKinnon Securities and Ladenburg, Thalmann &amp; Co., both established NYSE member firms, established a First Affiliated Securities branch office active in underwriting initial public offerings, and served as a vice president in corporate finance at Irving Trust Bank. He began his career in the Capital Markets Group of Prudential Insurance Company of America.</p>
+            <p>Alan Stone received a BS in Economics and Finance from the University of Pennsylvania's Wharton School and an MBA in Finance and Investments from New York University's Graduate School of Business, with additional studies at the London School of Economics and UCLA. He is active in community affairs in Westwood and Beverly Hills, California.</p>
+            <div class="founder-links">
+              <a href="mailto:astone@alanstone.com">astone@alanstone.com</a>
+              <a href="https://www.linkedin.com/in/alanstonecompany/" rel="noopener">LinkedIn profile</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -704,27 +733,8 @@
     <section class="section" id="team" aria-labelledby="team-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Management and Advisory Board</span>
+          <span class="eyebrow">Associates and Advisory Board</span>
           <h2 id="team-title">Senior professionals with long tenures on Wall Street and with the firm</h2>
-        </div>
-
-        <div class="founder">
-          <figure class="founder-photo">
-            <img src="assets/legacy/management2nd-large.jpg" alt="Portrait of Alan Stone, Managing Director, in a suit and tie" width="396" height="486" loading="lazy">
-            <figcaption>Alan Stone, Managing Director</figcaption>
-          </figure>
-          <div>
-            <h3>Alan Stone</h3>
-            <div class="role">Managing Director</div>
-            <p>During the past decades, Alan Stone &amp; Company, LLC has become one of the top ranked investor relations firms serving emerging companies. Throughout his career Alan Stone has been involved in a wide variety of investor relations, investment banking, corporate finance, and merger and acquisition activities, arranging numerous $2 to $20 million financing and merger transactions for NYSE, AMEX, NASDAQ and OTC listed companies.</p>
-            <p>Mr. Stone represented the American Stock Exchange as Director of the Los Angeles AMEX Corporate Focus and Security Analyst Forum, a private group of investment brokers, money managers, investment bankers and analysts, arranging regular luncheon meetings at the Jonathan Club and the Beverly Regent Wilshire Hotel for AMEX, NYSE and NASDAQ listed companies.</p>
-            <p>He was an analyst and assistant portfolio manager of Merrill Lynch Asset Management's $250 million high yield Corporate Bond Fund, one of the largest buyers of corporate stocks and bonds on Wall Street, and later joined Merrill Lynch's brokerage subsidiary in money management for individuals, corporations, pension funds and institutions. He was also associated with Thomson McKinnon Securities and Ladenburg, Thalmann &amp; Co., both established NYSE member firms, established a First Affiliated Securities branch office active in underwriting initial public offerings, and served as a vice president in corporate finance at Irving Trust Bank. He began his career in the Capital Markets Group of Prudential Insurance Company of America.</p>
-            <p>Alan Stone received a BS in Economics and Finance from the University of Pennsylvania's Wharton School and an MBA in Finance and Investments from New York University's Graduate School of Business, with additional studies at the London School of Economics and UCLA. He is active in community affairs in Westwood and Beverly Hills, California.</p>
-            <div class="founder-links">
-              <a href="mailto:astone@alanstone.com">astone@alanstone.com</a>
-              <a href="https://www.linkedin.com/in/alanstonecompany/" rel="noopener">LinkedIn profile</a>
-            </div>
-          </div>
         </div>
 
         <div class="team-grid">
