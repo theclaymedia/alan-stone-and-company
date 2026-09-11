@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Stone &amp; Company, LLC | Investor Relations for Emerging Growth Companies</title>
+  <meta name="description" content="Alan Stone &amp; Company, LLC is a Los Angeles investor relations, research and capital markets consulting firm serving emerging growth public companies since 1989. Offices in Los Angeles, New York and Palm Beach.">
+  <meta name="theme-color" content="#10213f">
+  <link rel="icon" href="assets/alan-stone-logo-forLightBackgrounds-vector.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #10213f;
+      --navy-deep: #0a1629;
+      --navy-tint: #1b3160;
+      --gold: #CE9F11;
+      --gold-light: #EDC447;
+      --gold-text: #7a5c05;
+      --paper: #f6f3ec;
+      --paper-deep: #ebe6da;
+      --white: #ffffff;
+      --ink: #161a22;
+      --muted: #4b515d;
+      --line: #d9d3c5;
+      --line-dark: rgba(255, 255, 255, 0.16);
+      --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      --sans: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+      --container: 1180px;
+      --gutter: clamp(20px, 4vw, 48px);
+      --section: clamp(72px, 10vw, 136px);
+      --header-h: 84px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    img, video { max-width: 100%; display: block; }
+    img { height: auto; }
+    h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.12; margin: 0 0 0.5em; letter-spacing: -0.005em; }
+    h1 { font-size: clamp(2.5rem, 6.2vw, 4.6rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.35rem, 2vw, 1.65rem); }
+    p { margin: 0 0 1.1em; }
+    a { color: var(--navy); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--gold-text); }
+    ul, ol { padding-left: 1.2em; }
+    address { font-style: normal; }
+
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .on-dark :focus-visible, .on-dark:focus-visible { outline-color: var(--gold-light); }
+
+    .skip-link {
+      position: absolute; left: 12px; top: -80px; z-index: 200;
+      background: var(--navy); color: var(--white); padding: 10px 16px; border-radius: 4px; font-weight: 600;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 12px; outline-color: var(--gold-light); }
+
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+      clip: rect(0 0 0 0); clip-path: inset(50%); border: 0; white-space: nowrap;
+    }
+
+    .container { width: min(100% - 2 * var(--gutter), var(--container)); margin-inline: auto; }
+    .section { padding-block: var(--section); }
+    .section-head { max-width: 62ch; margin-bottom: clamp(32px, 5vw, 56px); }
+    .eyebrow {
+      display: block; font-family: var(--sans); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--gold-text); margin-bottom: 16px;
+    }
+    .on-dark .eyebrow { color: var(--gold-light); }
+    .lede { font-size: clamp(1.15rem, 1.6vw, 1.35rem); line-height: 1.55; color: var(--muted); }
+    .on-dark .lede { color: rgba(255, 255, 255, 0.82); }
+    .rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px;
+      padding: 0 28px; border-radius: 3px; font-family: var(--sans); font-weight: 600; font-size: 1rem;
+      letter-spacing: 0.01em; text-decoration: none; cursor: pointer; border: 1.5px solid transparent;
+      transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+    }
+    .btn-gold { background: var(--gold); color: var(--navy-deep); border-color: var(--gold); }
+    .btn-gold:hover { background: var(--gold-light); border-color: var(--gold-light); color: var(--navy-deep); }
+    .btn-outline-light { background: transparent; color: var(--white); border-color: rgba(255, 255, 255, 0.7); }
+    .btn-outline-light:hover { background: rgba(255, 255, 255, 0.12); color: var(--white); border-color: var(--white); }
+    .btn-navy { background: var(--navy); color: var(--white); border-color: var(--navy); }
+    .btn-navy:hover { background: var(--navy-tint); border-color: var(--navy-tint); color: var(--white); }
+    .btn-outline { background: transparent; color: var(--navy); border-color: var(--navy); }
+    .btn-outline:hover { background: var(--navy); color: var(--white); }
+
+    /* Header */
+    .site-header {
+      position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--header-h);
+      display: flex; align-items: center;
+      color: var(--white);
+      transition: background-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+    }
+    .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; text-decoration: none; }
+    .brand img { height: 44px; width: auto; }
+    .brand .logo-light { display: none; }
+    .site-header.is-scrolled { background: rgba(255, 255, 255, 0.96); color: var(--navy); box-shadow: 0 1px 0 var(--line); }
+    .site-header.is-scrolled .logo-dark { display: none; }
+    .site-header.is-scrolled .logo-light { display: block; }
+
+    .nav-list { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(14px, 2vw, 30px); align-items: center; }
+    .nav-list a { color: inherit; text-decoration: none; font-weight: 500; font-size: 0.98rem; padding: 8px 2px; border-bottom: 2px solid transparent; }
+    .nav-list a:hover, .nav-list a[aria-current="true"] { border-bottom-color: var(--gold); color: inherit; }
+    .nav-cta { margin-left: 8px; }
+    .site-header .btn-nav { min-height: 42px; padding: 0 18px; font-size: 0.95rem; }
+    .site-header.is-scrolled .btn-nav { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+    .nav-toggle {
+      display: none; background: transparent; border: 1.5px solid currentColor; color: inherit; border-radius: 3px;
+      padding: 8px 14px; font: inherit; font-weight: 600; cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      :root { --header-h: 72px; }
+      .brand img { height: 36px; }
+      .nav-toggle { display: inline-flex; align-items: center; gap: 8px; }
+      .site-nav { display: none; position: absolute; top: var(--header-h); left: 0; right: 0; background: var(--white); color: var(--navy); border-top: 1px solid var(--line); box-shadow: 0 16px 32px rgba(0,0,0,0.12); }
+      .site-nav.is-open { display: block; }
+      .nav-list { flex-direction: column; align-items: stretch; gap: 0; padding: 12px var(--gutter) 20px; }
+      .nav-list li { border-bottom: 1px solid var(--line); }
+      .nav-list li:last-child { border-bottom: 0; padding-top: 14px; }
+      .nav-list a { display: block; padding: 14px 0; color: var(--navy); font-size: 1.05rem; }
+      .nav-cta .btn-nav { width: 100%; background: var(--navy); color: var(--white); border-color: var(--navy); }
+    }
+
+    /* Hero */
+    .hero {
+      position: relative; isolation: isolate; overflow: hidden;
+      min-height: 100vh; min-height: 100svh;
+      display: grid; place-items: center; text-align: center;
+      color: var(--white); background: var(--navy-deep);
+      padding: calc(var(--header-h) + 32px) var(--gutter) 64px;
+    }
+    .hero-media { position: absolute; inset: 0; z-index: -2; }
+    .hero-media video, .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .hero-shade {
+      position: absolute; inset: 0; z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(10, 22, 41, 0.72) 0%, rgba(10, 22, 41, 0.48) 45%, rgba(10, 22, 41, 0.78) 100%);
+    }
+    .hero-inner { max-width: 860px; margin-inline: auto; display: flex; flex-direction: column; align-items: center; }
+    .hero .eyebrow { color: var(--gold-light); margin-bottom: 22px; }
+    .hero h1 { margin-bottom: 22px; font-weight: 400; text-wrap: balance; }
+    .hero h1 em { font-style: italic; font-weight: 400; color: var(--gold-light); }
+    .hero p { max-width: 58ch; font-size: clamp(1.1rem, 1.5vw, 1.3rem); line-height: 1.55; color: rgba(255, 255, 255, 0.86); margin-bottom: 36px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+    .hero-meta { margin-top: clamp(40px, 8vh, 72px); font-size: 0.9rem; letter-spacing: 0.06em; color: rgba(255, 255, 255, 0.72); text-transform: uppercase; }
+    .hero-meta span + span::before { content: "\00b7"; margin: 0 12px; }
+    .video-toggle {
+      position: absolute; right: clamp(16px, 3vw, 36px); bottom: clamp(16px, 3vw, 36px); z-index: 2;
+      background: rgba(10, 22, 41, 0.6); color: var(--white); border: 1px solid rgba(255,255,255,0.5); border-radius: 3px;
+      padding: 8px 14px; font: inherit; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; cursor: pointer;
+    }
+    .video-toggle:hover { background: rgba(10, 22, 41, 0.85); }
+
+    /* Firm */
+    .firm-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
+    .firm-copy p { font-size: 1.1rem; }
+    .firm-photo figure { margin: 0; }
+    .firm-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+    .firm-photo figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 10px; }
+    .principles { margin-top: clamp(48px, 6vw, 80px); border-top: 1px solid var(--line); }
+    .principles dl { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+    .principles div { padding: 32px 28px 32px 0; border-bottom: 1px solid var(--line); }
+    .principles dt { font-family: var(--serif); font-size: 1.4rem; font-weight: 500; margin-bottom: 8px; color: var(--navy); }
+    .principles dd { margin: 0; color: var(--muted); font-size: 1rem; }
+
+    /* Services */
+    .services { background: var(--white); }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .service { padding: 36px 32px 40px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .service-num { font-family: var(--serif); font-size: 0.95rem; color: var(--gold-text); letter-spacing: 0.1em; display: block; margin-bottom: 18px; }
+    .service h3 { margin-bottom: 12px; color: var(--navy); }
+    .service p { color: var(--muted); margin: 0 0 12px; font-size: 1rem; }
+    .service ul { margin: 0; padding-left: 1.1em; color: var(--muted); font-size: 0.97rem; }
+    .service li + li { margin-top: 4px; }
+
+    /* Approach */
+    .approach-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
+    .steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+    .steps li { display: grid; grid-template-columns: 64px 1fr; gap: 18px; padding: 26px 0; border-top: 1px solid var(--line); counter-increment: step; }
+    .steps li:last-child { border-bottom: 1px solid var(--line); }
+    .steps li::before { content: counter(step, decimal-leading-zero); font-family: var(--serif); font-size: 1.9rem; color: var(--gold-text); line-height: 1; padding-top: 4px; }
+    .steps h3 { font-size: 1.3rem; margin-bottom: 6px; color: var(--navy); }
+    .steps p { margin: 0; color: var(--muted); font-size: 1rem; }
+    .aims { margin-top: 28px; background: var(--white); border: 1px solid var(--line); padding: 28px 30px; }
+    .aims h3 { font-size: 1.2rem; color: var(--navy); margin-bottom: 14px; }
+    .aims ul { margin: 0; columns: 2; column-gap: 28px; padding-left: 1.1em; color: var(--muted); font-size: 0.98rem; }
+    .aims li { break-inside: avoid; margin-bottom: 6px; }
+
+    /* Roadshows (dark) */
+    .roadshows { background: var(--navy); color: var(--white); position: relative; overflow: hidden; }
+    .roadshows .container { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 96px); align-items: center; }
+    .roadshows h2, .roadshows h3 { color: var(--white); }
+    .roadshows p { color: rgba(255, 255, 255, 0.84); }
+    .roadshows figure { margin: 0; }
+    .roadshows img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; }
+    .roadshows figcaption { font-size: 0.82rem; color: rgba(255, 255, 255, 0.6); margin-top: 10px; }
+    .cities { margin: 26px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px 16px; font-size: 1rem; }
+    .cities li { padding: 8px 0; border-bottom: 1px solid var(--line-dark); }
+    .memberships { margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--line-dark); font-size: 0.95rem; color: rgba(255,255,255,0.75); }
+    .memberships strong { color: var(--white); font-weight: 600; }
+
+    /* Results */
+    .results { background: var(--white); }
+    .case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .case { border: 1px solid var(--line); padding: 30px 28px 32px; background: var(--paper); display: flex; flex-direction: column; }
+    .case .figure { font-family: var(--serif); font-size: clamp(2rem, 3vw, 2.6rem); line-height: 1; color: var(--navy); margin-bottom: 6px; }
+    .case .figure-note { font-size: 0.85rem; color: var(--gold-text); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; margin-bottom: 20px; }
+    .case h3 { font-size: 1.25rem; margin-bottom: 2px; color: var(--navy); }
+    .case .ticker { font-size: 0.88rem; color: var(--muted); margin-bottom: 12px; }
+    .case p { margin: 0; color: var(--muted); font-size: 0.98rem; }
+    .client-list { margin-top: clamp(40px, 5vw, 64px); padding-top: 32px; border-top: 1px solid var(--line); }
+    .client-list h3 { color: var(--navy); font-size: 1.25rem; }
+    .client-list ul { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 24px; color: var(--muted); font-size: 0.98rem; }
+    .client-list li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+    .disclaimer { margin-top: 28px; font-size: 0.88rem; color: var(--muted); max-width: 80ch; }
+
+    /* Team */
+    .founder { display: grid; grid-template-columns: 300px 1fr; gap: clamp(32px, 5vw, 72px); align-items: start; margin-bottom: clamp(48px, 6vw, 80px); }
+    .founder-photo { margin: 0; }
+    .founder-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border: 1px solid var(--line); background: var(--paper-deep); }
+    .founder-photo figcaption { font-size: 0.82rem; color: var(--muted); margin-top: 10px; }
+    .founder h3 { font-size: clamp(1.7rem, 2.6vw, 2.2rem); margin-bottom: 4px; color: var(--navy); }
+    .role { color: var(--gold-text); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.82rem; margin-bottom: 18px; }
+    .founder p { font-size: 1.02rem; color: var(--ink); }
+    .founder-links { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 18px; font-size: 0.98rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 32px; border-top: 1px solid var(--line); }
+    .member { padding: 28px 0 30px; border-bottom: 1px solid var(--line); }
+    .member h3 { font-size: 1.2rem; margin-bottom: 2px; color: var(--navy); }
+    .member .role { margin-bottom: 10px; }
+    .member p { margin: 0; color: var(--muted); font-size: 0.96rem; }
+    .references { margin-top: clamp(40px, 5vw, 64px); padding: 32px 34px; background: var(--white); border: 1px solid var(--line); display: grid; grid-template-columns: 1fr 2fr; gap: 32px; }
+    .references h3 { color: var(--navy); font-size: 1.3rem; }
+    .references p { color: var(--muted); font-size: 0.98rem; }
+    .references ul { margin: 0; padding-left: 1.1em; color: var(--muted); font-size: 0.98rem; columns: 2; column-gap: 32px; }
+    .references li { break-inside: avoid; margin-bottom: 8px; }
+
+    /* Contact */
+    .contact { background: var(--navy-deep); color: var(--white); }
+    .contact h2, .contact h3 { color: var(--white); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
+    .offices { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: 22px; }
+    .offices li { padding-top: 20px; border-top: 1px solid var(--line-dark); }
+    .offices h3 { font-size: 1.15rem; margin-bottom: 4px; }
+    .offices address, .offices p { color: rgba(255,255,255,0.8); margin: 0; font-size: 0.98rem; }
+    .contact a { color: var(--gold-light); }
+    .contact a:hover { color: var(--white); }
+    .contact-photo { margin: 28px 0 0; }
+    .contact-photo img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .contact-photo figcaption { font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-top: 8px; }
+
+    .form-card { background: var(--white); color: var(--ink); padding: clamp(28px, 4vw, 44px); border-radius: 4px; }
+    .form-card h3 { color: var(--navy); margin-bottom: 6px; }
+    .form-card > p { color: var(--muted); font-size: 0.98rem; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; margin-top: 22px; }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { font-weight: 600; font-size: 0.95rem; color: var(--navy); }
+    .field .hint { font-size: 0.85rem; color: var(--muted); }
+    .field input, .field select, .field textarea {
+      font: inherit; padding: 12px 14px; border: 1.5px solid #b9b3a4; border-radius: 3px; background: var(--white); color: var(--ink); width: 100%;
+    }
+    .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible { outline: 3px solid var(--gold); outline-offset: 1px; border-color: var(--navy); }
+    .field textarea { min-height: 130px; resize: vertical; }
+    .field [aria-invalid="true"] { border-color: #b3261e; }
+    .field .error { color: #b3261e; font-size: 0.88rem; display: none; }
+    .field.has-error .error { display: block; }
+    .form-actions { grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 4px; }
+    .form-status { grid-column: 1 / -1; font-weight: 600; color: #1d6b32; }
+    .form-status:empty { display: none; }
+    .consent-line { grid-column: 1 / -1; display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: var(--muted); }
+    .consent-line input { width: 18px; height: 18px; margin-top: 3px; flex: none; }
+
+    /* Footer */
+    .site-footer { background: var(--navy-deep); color: rgba(255,255,255,0.78); border-top: 1px solid var(--line-dark); padding: 56px 0 36px; font-size: 0.95rem; }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
+    .site-footer h3 { color: var(--white); font-family: var(--sans); font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; }
+    .site-footer ul { list-style: none; margin: 0; padding: 0; }
+    .site-footer li { margin-bottom: 8px; }
+    .site-footer a { color: rgba(255,255,255,0.85); }
+    .site-footer a:hover { color: var(--gold-light); }
+    .site-footer .brand img { height: 40px; }
+    .footer-bottom { margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--line-dark); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: 0.86rem; color: rgba(255,255,255,0.62); }
+    .footer-bottom button { background: none; border: 0; padding: 0; font: inherit; color: rgba(255,255,255,0.85); text-decoration: underline; cursor: pointer; text-underline-offset: 3px; }
+    .footer-bottom button:hover { color: var(--gold-light); }
+    .credits { margin-top: 14px; font-size: 0.8rem; color: rgba(255,255,255,0.5); max-width: 90ch; }
+    .credits a { color: rgba(255,255,255,0.65); }
+
+    /* Cookie notice */
+    .cookie-notice {
+      position: fixed; left: 20px; bottom: 20px; z-index: 150; width: min(400px, calc(100vw - 40px));
+      background: var(--white); color: var(--ink); border: 1px solid var(--line); border-top: 4px solid var(--gold);
+      box-shadow: 0 18px 48px rgba(10, 22, 41, 0.22); padding: 22px 24px 20px; border-radius: 4px;
+    }
+    .cookie-notice h2 { font-family: var(--serif); font-size: 1.3rem; margin-bottom: 6px; color: var(--navy); }
+    .cookie-notice p { font-size: 0.93rem; color: var(--muted); margin-bottom: 16px; }
+    .cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .cookie-actions .btn { min-height: 42px; padding: 0 18px; font-size: 0.93rem; }
+    .cookie-notice .policy { font-size: 0.88rem; margin: 12px 0 0; }
+    .cookie-notice .policy a { color: var(--navy); }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .service-grid, .case-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .principles dl { grid-template-columns: repeat(2, 1fr); }
+      .client-list ul { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 800px) {
+      .firm-grid, .approach-grid, .roadshows .container, .contact-grid, .founder, .references { grid-template-columns: 1fr; }
+      .founder-photo { max-width: 260px; }
+      .roadshows img { aspect-ratio: 16 / 10; }
+      .aims ul, .references ul { columns: 1; }
+      .client-list ul { grid-template-columns: repeat(2, 1fr); }
+      .cities { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .service-grid, .case-grid, .team-grid { grid-template-columns: 1fr; }
+      .principles dl { grid-template-columns: 1fr; }
+      .principles div { padding-right: 0; }
+      .form-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .client-list ul { grid-template-columns: 1fr; }
+      .hero-meta span { display: block; }
+      .hero-meta span + span::before { content: none; }
+      .cookie-notice { left: 12px; bottom: 12px; width: calc(100vw - 24px); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Alan Stone &amp; Company, LLC, home">
+        <img class="logo-dark" src="assets/alan-stone-logo-forDarkBackgrounds-vector.svg" alt="Alan Stone &amp; Company, LLC. ASC, Investor Communications and Relations" width="190" height="44">
+        <img class="logo-light" src="assets/alan-stone-logo-forLightBackgrounds-vector.svg" alt="" width="190" height="44" aria-hidden="true">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#firm">The Firm</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">How We Work</a></li>
+          <li><a href="#roadshows">Roadshows</a></li>
+          <li><a href="#results">Client Results</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="nav-cta"><a class="btn btn-gold btn-nav" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero on-dark" id="top" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" tabindex="-1">
+          <source src="assets/hero-section-background.mp4" type="video/mp4">
+          <source src="assets/hero-section-background.mov" type="video/quicktime">
+        </video>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-inner">
+        <span class="eyebrow">Investor Relations for Emerging Growth Companies</span>
+        <h1 id="hero-title">A shuttle service to the <em>capital markets</em> since 1989</h1>
+        <p>Alan Stone &amp; Company connects emerging growth public companies with the analysts, brokers, money managers and institutions who move markets. Research, roadshows and relationships, built over a career on Wall Street.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#contact">Arrange a Consultation</a>
+          <a class="btn btn-outline-light" href="#results">See Client Results</a>
+        </div>
+        <p class="hero-meta"><span>Los Angeles</span><span>New York</span><span>Palm Beach</span></p>
+      </div>
+      <button class="video-toggle" id="video-toggle" type="button" aria-pressed="false">Pause video</button>
+    </section>
+
+    <section class="section" id="firm" aria-labelledby="firm-title">
+      <div class="container">
+        <div class="firm-grid">
+          <div class="firm-copy">
+            <span class="eyebrow">The Firm</span>
+            <h2 id="firm-title">A top ranked investor relations firm for the small cap marketplace</h2>
+            <p class="lede">Alan Stone &amp; Company, LLC (ASC) is an investor communications, research, consulting and investor relations firm that specializes in developing investor awareness, making professional introductions to the investment community, and enhancing stock market values for emerging growth companies.</p>
+            <p>We have represented many public companies across a wide range of business sectors. Because of our extensive contacts and long standing relationships within the investment community, our clients have greatly expanded their positioning with institutional investors, brokerage firms, market makers, analysts and individual investors.</p>
+            <p>Our focus on aggressively communicating each client's achievements and corporate strategy, supported by our own internal research and delivered in a targeted manner, establishes positive sentiment among Wall Street professionals. Working through an extensive network of investors built over a twenty five year career on Wall Street, the firm is a formidable link to the capital markets for emerging publicly traded companies.</p>
+            <p>After a successful career in New York City, the firm relocated to Los Angeles in 1989 to expand investor relations on the West Coast, and broadened its presence to the Florida investment community in 1999. ASC continues to maintain a significant presence on Wall Street and in Palm Beach.</p>
+            <p><a href="#team">Read about our management and advisory board</a></p>
+          </div>
+          <div class="firm-photo">
+            <figure>
+              <img src="assets/photos/westwood-wilshire.jpg" alt="Archival aerial view of Westwood Village and Wilshire Boulevard in Los Angeles, with office towers along the corridor" width="1800" height="1196" loading="lazy">
+              <figcaption>Westwood and the Wilshire corridor, home to the firm's Los Angeles offices since 1989.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="principles">
+          <h3 class="visually-hidden">Our principles</h3>
+          <dl>
+            <div>
+              <dt>Sharp focus</dt>
+              <dd>Investor relations is a unique discipline that requires a keen understanding of the bottom line issues for both public companies and investors. Since inception we have applied a sharp focus to it, building a solid presence in major financial markets and a diverse range of industries.</dd>
+            </div>
+            <div>
+              <dt>Strategic approach</dt>
+              <dd>We work with clients to create individualized strategies that achieve realistic goals. Our programs emphasize in-depth analysis of, and feedback on, investor perceptions and expectations.</dd>
+            </div>
+            <div>
+              <dt>Senior professionals</dt>
+              <dd>Clients work with market trained senior advisors with backgrounds in investment banking, money management, equity research, sales and marketing, and business journalism.</dd>
+            </div>
+            <div>
+              <dt>Strong relationships</dt>
+              <dd>Our experience and common background with the financial community have let us forge strong relationships with influential analysts, money managers and brokers, and maintain a reputation for credibility.</dd>
+            </div>
+            <div>
+              <dt>High quality deliverables</dt>
+              <dd>All of our work is customized. Deliverables span every core shareholder communication, from press releases and conference call scripts to fact sheets, annual reports and investor perception studies, plus targeted buy side and sell side marketing.</dd>
+            </div>
+            <div>
+              <dt>Tangible results</dt>
+              <dd>We strive to produce results that are measurable: increased analyst sponsorship, a broader investor base and positive exposure in the Wall Street community.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Services</span>
+          <h2 id="services-title">Investor relations, communications, intelligence and equity research for public companies</h2>
+          <p class="lede">Public companies pursuing growth have many financial tools available, from asset based financing and public offerings to mergers and acquisitions. The one most often forgotten is the targeted application of investor relations.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service">
+            <span class="service-num">01</span>
+            <h3>Investor Relations Programs</h3>
+            <p>Full service programs that increase brokerage community awareness, add active retail brokers, procure institutional interest and attract quality market makers.</p>
+            <ul>
+              <li>Broaden the shareholder base and obtain greater liquidity</li>
+              <li>Identify the issues discouraging investors</li>
+              <li>Measure results through surveys, response cards and direct feedback</li>
+            </ul>
+          </article>
+          <article class="service">
+            <span class="service-num">02</span>
+            <h3>Analyst Research Coverage</h3>
+            <p>Our focus on research separates the firm from most of the competition. We arrange research report coverage prepared by experienced CFAs who are well regarded in the Wall Street and institutional communities.</p>
+            <ul>
+              <li>Fundamental and technical analysis with a value and timing approach</li>
+              <li>Specialties in technology, health care and biotech, energy, retail, manufacturing and special situations</li>
+              <li>Distribution through our affiliate, WallStreet Research</li>
+            </ul>
+          </article>
+          <article class="service">
+            <span class="service-num">03</span>
+            <h3>Roadshows and One-on-One Meetings</h3>
+            <p>Meetings between management and selected brokerage firms, money managers and analysts in leading cities across the country, plus sponsorship at selected investment conferences.</p>
+            <ul>
+              <li>Investor luncheon presentations and private club receptions</li>
+              <li>Corporate interviews at the NASDAQ MarketSite and on the floor of the NYSE</li>
+              <li>Introductions to European capital markets through associates</li>
+            </ul>
+          </article>
+          <article class="service">
+            <span class="service-num">04</span>
+            <h3>Financial Communications</h3>
+            <p>Thorough and effective financial documents, and attention getting press releases disseminated over the wire to Dow Jones, Reuters and the financial press.</p>
+            <ul>
+              <li>Annual and quarterly reports, shareholder letters and financial supplements</li>
+              <li>Corporate profiles, fact sheets and visual aids</li>
+              <li>Media attention from national and regional newspapers, broadcast and newsletters</li>
+            </ul>
+          </article>
+          <article class="service">
+            <span class="service-num">05</span>
+            <h3>Investor Intelligence and Consulting</h3>
+            <p>Intelligence gathering for companies seeking professionals who target undervalued and niche industries, combined with consulting on capitalization and corporate strategy.</p>
+            <ul>
+              <li>Equity valuation and capital market analysis</li>
+              <li>Feedback on investor perceptions and expectations</li>
+              <li>Targets of opportunity such as joint ventures and acquisitions</li>
+            </ul>
+          </article>
+          <article class="service">
+            <span class="service-num">06</span>
+            <h3>Capital Markets Introductions and Listings</h3>
+            <p>After due diligence on a client's objectives, we network senior management with leading investment firms across America and help companies move to more active trading markets.</p>
+            <ul>
+              <li>Introductions to underwriters and financing sources</li>
+              <li>Listing upgrades from OTC markets to NASDAQ, NYSE American or NYSE</li>
+              <li>Support for secondary offerings and private placements</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="approach-grid">
+          <div>
+            <span class="eyebrow">How We Work</span>
+            <h2 id="approach-title">A disciplined program, from first profile to lasting sponsorship</h2>
+            <p class="lede">A well structured investor relations program complements both short term and long term business objectives. The investment community wants to know that a company has a plan to meet its stated goals, and that management will back up its words.</p>
+            <p>By communicating a company's business strategy, combined with research coverage, to our proprietary contact lists, we have arranged numerous successful roadshows and campaigns that achieve enhanced investor consciousness of our clients. The result is increased or stabilized valuations that a company can then use as a tool for financing or acquisitions.</p>
+            <div class="aims">
+              <h3>What the program is designed to achieve</h3>
+              <ul>
+                <li>Increase brokerage community awareness</li>
+                <li>Add to the number of active retail brokers</li>
+                <li>Draw the attention of research analysts</li>
+                <li>Enhance media coverage</li>
+                <li>Attract institutional interest</li>
+                <li>Attain greater liquidity</li>
+                <li>Broaden the shareholder base</li>
+                <li>Attract quality market makers</li>
+                <li>Raise sentiment among potential investors</li>
+                <li>Provide focused investor intelligence</li>
+                <li>Arrange roadshows to enhance visibility</li>
+                <li>Ensure the stock price better reflects performance</li>
+              </ul>
+            </div>
+          </div>
+          <ol class="steps">
+            <li>
+              <div>
+                <h3>Corporate profile or research report</h3>
+                <p>The strategy starts with preparation of a corporate profile or an institutional quality research report on the client company, covering strategy, competitive advantages, financial condition, management and outlook.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Targeted distribution</h3>
+                <p>A direct mail and email campaign is set in motion shortly thereafter. The profile or report goes to our contacts and to a proprietary database of professional and individual investors, so a large audience quickly learns the client's results, potential and direction.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Personal outreach</h3>
+                <p>Concurrently, we launch an active phone campaign to personally highlight the essential and attractive features of the client company to the key brokers, institutions and investment banking firms we have selected.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Meetings and roadshows</h3>
+                <p>We carefully select the institutions, brokers and analysts most likely to be interested, then arrange meetings between management and those firms in leading financial centers.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Ongoing sponsorship</h3>
+                <p>On a regular basis we distribute news releases, analyst and newsletter research, summary quarterly financial data and profile updates. We assist with press releases, stockholder reports and annual reports, and can arrange printing, design, corporate video and slide presentations at economical prices.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Access to capital and exchange listings</h3>
+                <p>We help emerging companies list on more active trading markets, and introduce management to underwriters and financing sources as the program builds momentum.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadshows on-dark" id="roadshows" aria-labelledby="roadshows-title">
+      <div class="container">
+        <div>
+          <span class="eyebrow">ASC Roadshows</span>
+          <h2 id="roadshows-title">Face time with the investment community in the cities that matter</h2>
+          <p class="lede">We arrange roadshows and one-on-one meetings between management and selected brokerage firms, money managers and analysts throughout the country. These meetings expose a client's story to a broad marketplace, and enhance underwriters' offerings and aftermarket trading through our network of brokerage firms interested in small cap companies.</p>
+          <p>Roadshows are conducted in prestigious area restaurants and private clubs. Our membership in the Penn Club of New York allows clients to meet members of the investment community in a distinguished setting, and many ongoing conferences in New York City position clients before the Wall Street investment community. We can also arrange corporate interviews at the NASDAQ MarketSite in Times Square and on the trading floor of the New York Stock Exchange.</p>
+          <h3>Selected cities</h3>
+          <ul class="cities">
+            <li>Los Angeles</li>
+            <li>Beverly Hills</li>
+            <li>Orange County</li>
+            <li>San Diego</li>
+            <li>San Francisco</li>
+            <li>Phoenix</li>
+            <li>Denver</li>
+            <li>Dallas</li>
+            <li>Boston</li>
+            <li>New York</li>
+            <li>Miami and Palm Beach</li>
+            <li>European capital markets</li>
+          </ul>
+          <p class="memberships"><strong>Memberships.</strong> ASC has been a long standing member of the National Investment Bankers Association (NIBA), the Southern California Investment Association (SCIA), the Stock and Bond Club of South Florida, and the Financial Analysts and Money Managers Society (FAMMS) in New York City.</p>
+        </div>
+        <figure>
+          <img src="assets/photos/nyse-broad-street.jpg" alt="The columned Broad Street facade of the New York Stock Exchange, viewed from the sidewalk" width="1800" height="1122" loading="lazy">
+          <figcaption>The New York Stock Exchange on Broad Street. The firm maintains a significant presence on Wall Street.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section results" id="results" aria-labelledby="results-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Client Case Studies</span>
+          <h2 id="results-title">Emerging growth companies whose market value, liquidity and sponsorship improved with ASC</h2>
+          <p class="lede">Alan Stone &amp; Company has represented many unique AMEX, NASDAQ and OTC traded public companies in investor relations, research and consulting. Through a highly focused program, a number of micro capitalization clients more than doubled or tripled their market valuation shortly after retaining the firm, with significantly enhanced trading volume over time.</p>
+        </div>
+        <div class="case-grid">
+          <article class="case">
+            <div class="figure">$0.60 to $9.00</div>
+            <div class="figure-note">Share price over four years</div>
+            <h3>International Remote Imaging Systems</h3>
+            <div class="ticker">AMEX: IRI</div>
+            <p>Retained when the stock traded inactively at sixty cents. Consistent analyst reports generated buy recommendations in numerous publications, extensive media coverage followed, and ASC supported a $2.5 million private placement for the company's research subsidiary. Regional investment banks including Cruttenden Roth, Paulson and Gruntal offered $5 to $10 million in financing.</p>
+          </article>
+          <article class="case">
+            <div class="figure">5x</div>
+            <div class="figure-note">Increase in market capitalization</div>
+            <h3>American Eco Corporation</h3>
+            <div class="ticker">NASDAQ: ECGO</div>
+            <p>ASC first developed the company's contacts within the capital markets, then procured several $10 to $15 million financing proposals from Josephthal, Schroder Wertheim, Oppenheimer and Cruttenden Roth, along with additional market maker support and research coverage.</p>
+          </article>
+          <article class="case">
+            <div class="figure">$7 million</div>
+            <div class="figure-note">Firm commitment secondary offering</div>
+            <h3>New Frontier Media, Inc.</h3>
+            <div class="ticker">NASDAQ: NOOF</div>
+            <p>Upon retaining the firm, New Frontier Media obtained a firm commitment for a secondary offering. ASC conducted an extensive roadshow, and the proceeds financed a significant acquisition that enabled growth through further acquisitions and new product development.</p>
+          </article>
+          <article class="case">
+            <div class="figure">$2.00 to $5.00</div>
+            <div class="figure-note">Share price within six months</div>
+            <h3>Harlyn Products, Inc.</h3>
+            <div class="ticker">AMEX: HRN</div>
+            <p>Personal meetings with national and regional brokerage firms, analyst coverage, articles in the Wall Street Journal and conference attendance generated underwriting offers from Schroder Wertheim, Oppenheimer and Wedbush Morgan, a $20 million credit facility proposal from a major New York bank, and a leveraged buyout proposal.</p>
+          </article>
+          <article class="case">
+            <div class="figure">$100 million+</div>
+            <div class="figure-note">Market capitalization achieved</div>
+            <h3>Lifepoint, Inc.</h3>
+            <div class="ticker">AMEX: LFP</div>
+            <p>Over roughly two years the company went from an inactively traded bulletin board stock, previously delisted, to an actively traded company that raised several rounds of private capital, attained research coverage and upgraded its listing to the American Stock Exchange.</p>
+          </article>
+          <article class="case">
+            <div class="figure">3x</div>
+            <div class="figure-note">Stock value within a few months</div>
+            <h3>Creative Computer Applications, Inc.</h3>
+            <div class="ticker">AMEX: CAP</div>
+            <p>Retained when shares traded inactively at one dollar. ASC immediately attracted analyst coverage, newsletter coverage and brokerage industry interest, more than tripling the stock value on significantly enhanced volume through focused communication with highly targeted investment professionals.</p>
+          </article>
+        </div>
+
+        <div class="client-list">
+          <h3>Public companies that have engaged Alan Stone &amp; Company</h3>
+          <ul>
+            <li>9278 Communications</li>
+            <li>American Body Armor</li>
+            <li>American Eco Corporation</li>
+            <li>Creative Computer Applications, Inc.</li>
+            <li>Dallas Gold &amp; Silver</li>
+            <li>Elegant Illusions, Inc.</li>
+            <li>Frontline Communications</li>
+            <li>GTC Telecom</li>
+            <li>Harlyn Products, Inc.</li>
+            <li>International Remote Imaging Systems</li>
+            <li>Lifepoint, Inc.</li>
+            <li>Medium4.com</li>
+            <li>New Frontier Media, Inc.</li>
+            <li>North Coast Energy Corporation</li>
+            <li>Premier Concepts</li>
+            <li>Questcor Pharmaceuticals</li>
+            <li>Sparta Surgical Corporation</li>
+            <li>Voice It Worldwide, Inc.</li>
+            <li>Xybernaut Corporation</li>
+          </ul>
+          <p class="disclaimer">Case studies describe prior engagements. Past performance does not guarantee future results, and stock price and volume are influenced by many factors beyond an investor relations program. Alan Stone &amp; Company, LLC does not provide investment advice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Management and Advisory Board</span>
+          <h2 id="team-title">Senior professionals with long tenures on Wall Street and with the firm</h2>
+        </div>
+
+        <div class="founder">
+          <figure class="founder-photo">
+            <img src="assets/legacy/management2nd-large.jpg" alt="Portrait of Alan Stone, Managing Director, in a suit and tie" width="396" height="486" loading="lazy">
+            <figcaption>Alan Stone, Managing Director</figcaption>
+          </figure>
+          <div>
+            <h3>Alan Stone</h3>
+            <div class="role">Managing Director</div>
+            <p>During the past decades, Alan Stone &amp; Company, LLC has become one of the top ranked investor relations firms serving emerging companies. Throughout his career Alan Stone has been involved in a wide variety of investor relations, investment banking, corporate finance, and merger and acquisition activities, arranging numerous $2 to $20 million financing and merger transactions for NYSE, AMEX, NASDAQ and OTC listed companies.</p>
+            <p>Mr. Stone represented the American Stock Exchange as Director of the Los Angeles AMEX Corporate Focus and Security Analyst Forum, a private group of investment brokers, money managers, investment bankers and analysts, arranging regular luncheon meetings at the Jonathan Club and the Beverly Regent Wilshire Hotel for AMEX, NYSE and NASDAQ listed companies.</p>
+            <p>He was an analyst and assistant portfolio manager of Merrill Lynch Asset Management's $250 million high yield Corporate Bond Fund, one of the largest buyers of corporate stocks and bonds on Wall Street, and later joined Merrill Lynch's brokerage subsidiary in money management for individuals, corporations, pension funds and institutions. He was also associated with Thomson McKinnon Securities and Ladenburg, Thalmann &amp; Co., both established NYSE member firms, established a First Affiliated Securities branch office active in underwriting initial public offerings, and served as a vice president in corporate finance at Irving Trust Bank. He began his career in the Capital Markets Group of Prudential Insurance Company of America.</p>
+            <p>Alan Stone received a BS in Economics and Finance from the University of Pennsylvania's Wharton School and an MBA in Finance and Investments from New York University's Graduate School of Business, with additional studies at the London School of Economics and UCLA. He is active in community affairs in Westwood and Beverly Hills, California.</p>
+            <div class="founder-links">
+              <a href="mailto:astone@alanstone.com">astone@alanstone.com</a>
+              <a href="https://www.linkedin.com/in/alanstonecompany/" rel="noopener">LinkedIn profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <article class="member">
+            <h3>Stephen J. Pollack</h3>
+            <div class="role">Client Relations Advisor, Advisory Board</div>
+            <p>After twenty five years at Morgan Stanley, Mr. Pollack retired as First Vice President and Financial Advisor in New York City. He was previously a Vice President at Drexel Burnham Lambert for seventeen years. A Wharton graduate, he is an active member of FAMMS and the Friars Club, and is listed in Who's Who in America.</p>
+          </article>
+          <article class="member">
+            <h3>Tytus Biniakiewicz</h3>
+            <div class="role">Senior Analyst and Senior Associate</div>
+            <p>With the firm for more than a decade, Mr. Biniakiewicz previously managed investment portfolios on the Warsaw Stock Exchange and specialized in investment models based on technical analysis. He has consulted to emerging high tech public companies on planning, capitalization, mergers and regulatory compliance. BA, University of Cincinnati; MBA, Pepperdine University.</p>
+          </article>
+          <article class="member">
+            <h3>Christopher G. Muneio</h3>
+            <div class="role">Senior Associate</div>
+            <p>Mr. Muneio began his career at The Comvest Group, a private equity firm focused on lower middle market companies, helping grow assets under management from $165 million to nearly one billion. He later advised Kodiak Capital Group and Boyne Capital. BBA in Finance and Marketing, Palm Beach Atlantic University.</p>
+          </article>
+          <article class="member">
+            <h3>Rand Brenner</h3>
+            <div class="role">Senior Associate, New York</div>
+            <p>Mr. Brenner assists with business development and client relations in New York City. He has more than twenty years of marketing and promotion experience, including executive positions at Saban Entertainment and Warner Bros. BA, California State University; MBA, Pepperdine University.</p>
+          </article>
+          <article class="member">
+            <h3>John S. Keffalas</h3>
+            <div class="role">Senior Associate, Southern California</div>
+            <p>Mr. Keffalas assists with business development, sales and marketing, and client relations in Southern California, including San Diego and Orange County. He holds a BA and MBA from Penn State, a JD from Syracuse University and an MS in Information Technology from California State University, Fullerton.</p>
+          </article>
+          <article class="member">
+            <h3>Jonathan Braun</h3>
+            <div class="role">Business Development Advisor, Advisory Board</div>
+            <p>An entrepreneur who has founded numerous high tech and other businesses, Mr. Braun earned a master's degree at the Columbia School of Journalism and wrote for Parade Magazine and the New York Daily News. He is President of the Center for Contemporary Diplomacy.</p>
+          </article>
+          <article class="member">
+            <h3>Jeff Hall</h3>
+            <div class="role">Media Advisor, Advisory Board</div>
+            <p>Editor and publisher of Brentwood Media Group, whose newsmagazines include Brentwood News, Beverly Hills 90210, Santa Monica Sun and Pacific Palisades 90272. Formerly Vice President of the Los Angeles Times, he is a graduate of Stanford and holds an MBA from Harvard.</p>
+          </article>
+          <article class="member">
+            <h3>Gary Blum, Esq.</h3>
+            <div class="role">General and Securities Counsel, Los Angeles</div>
+            <p>Based in Los Angeles, Mr. Blum assists as general and securities counsel and serves on the ASC advisory board.</p>
+          </article>
+          <article class="member">
+            <h3>Barry Klein, Esq.</h3>
+            <div class="role">General and Securities Counsel, West Palm Beach</div>
+            <p>Based in West Palm Beach, Florida, Mr. Klein assists as general and securities counsel and serves on the ASC advisory board.</p>
+          </article>
+          <article class="member">
+            <h3>Kevin Stone</h3>
+            <div class="role">Associate</div>
+            <p>A graduate of Rutgers University in Economics and Political Science, Mr. Stone interned at Merrill Lynch, Johnson &amp; Johnson and the New Jersey Chamber of Commerce, and earned numerous awards in sales before joining the firm.</p>
+          </article>
+          <article class="member">
+            <h3>Eric Stone</h3>
+            <div class="role">Marketing and Client Relations</div>
+            <p>Mr. Stone is involved in marketing, client relations and business development for the firm. He holds a BA from Cook College of Rutgers University and brings sales and marketing experience from consumer products and financial services.</p>
+          </article>
+        </div>
+
+        <div class="references">
+          <div>
+            <h3>References</h3>
+            <p>Client, exchange, newswire and professional references are available on request. Contact details are provided directly to prospective clients.</p>
+          </div>
+          <ul>
+            <li>Paul Averback, M.D., Founder, Chairman, President and CEO, Nymox Pharmaceutical Corporation</li>
+            <li>Phillip B. Donenberg, CPA, CFO, BioSante Pharmaceuticals, Inc.</li>
+            <li>James D. Eger, CFO, Continental Energy Corporation</li>
+            <li>William C. Vassell, CEO, Murdoch Security &amp; Investigations, founder of Command Security Corporation</li>
+            <li>Roland Savage, Partner, AGS Specialists, LLC (American Stock Exchange)</li>
+            <li>PR Newswire and Business Wire</li>
+            <li>Gary Blum, Esq., securities counsel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact on-dark" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Contact Us</span>
+          <h2 id="contact-title">Arrange an evaluation or proposal tailored to your objectives</h2>
+          <p class="lede">To discuss how the firm's services can fit your company's particular needs, contact Alan Stone directly or send us a note using the form. We respond to every inquiry personally.</p>
+          <ul class="offices">
+            <li>
+              <h3>Corporate offices, Los Angeles</h3>
+              <address>10940 Wilshire Boulevard, 16th Floor<br>Los Angeles, California 90024</address>
+              <p>Telephone <a href="tel:+13104443940">310-444-3940</a><br>Facsimile 310-444-3941<br><a href="https://maps.google.com/maps?q=10940+Wilshire+Boulevard,+Los+Angeles,+CA+90024" rel="noopener">View on Google Maps</a></p>
+            </li>
+            <li>
+              <h3>New York</h3>
+              <address>590 Madison Avenue, 21st Floor<br>New York, New York 10022</address>
+              <p>Telephone <a href="tel:+12125214102">212-521-4102</a></p>
+            </li>
+            <li>
+              <h3>Palm Beach</h3>
+              <address>7765 Lake Worth Road, Suite 311<br>Wellington, Florida 33467</address>
+              <p>Telephone <a href="tel:+15613573094">561-357-3094</a></p>
+            </li>
+            <li>
+              <h3>Alan Stone, Managing Director</h3>
+              <p><a href="mailto:astone@alanstone.com">astone@alanstone.com</a></p>
+            </li>
+          </ul>
+          <figure class="contact-photo">
+            <img src="assets/photos/wilshire-corridor.jpg" alt="Aerial view of Wilshire Boulevard winding through Westwood in Los Angeles, lined with high rise buildings" width="1497" height="1081" loading="lazy">
+            <figcaption>The Wilshire corridor in Westwood, Los Angeles.</figcaption>
+          </figure>
+        </div>
+
+        <form class="form-card" id="contact-form" novalidate>
+          <h3>Request information</h3>
+          <p>Please share your contact information and investment interests. Fields marked required must be completed.</p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="first-name">First name <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
+              <input id="first-name" name="first-name" type="text" autocomplete="given-name" required>
+              <span class="error" id="first-name-error">Please enter your first name.</span>
+            </div>
+            <div class="field">
+              <label for="last-name">Last name <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
+              <input id="last-name" name="last-name" type="text" autocomplete="family-name" required>
+              <span class="error" id="last-name-error">Please enter your last name.</span>
+            </div>
+            <div class="field">
+              <label for="title">Title</label>
+              <input id="title" name="title" type="text" autocomplete="organization-title">
+            </div>
+            <div class="field">
+              <label for="organization">Organization</label>
+              <input id="organization" name="organization" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required inputmode="email">
+              <span class="error" id="email-error">Please enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Work phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+            </div>
+            <div class="field full">
+              <label for="interest">I am interested in</label>
+              <select id="interest" name="interest">
+                <option value="">Select an option</option>
+                <option>Investor relations program for my company</option>
+                <option>Analyst research coverage</option>
+                <option>Roadshows and investor meetings</option>
+                <option>Capital markets introductions or listing upgrade</option>
+                <option>Investment opportunities in ASC clients</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Interests and comments</label>
+              <span class="hint" id="message-hint">Tell us about your company, exchange listing and objectives.</span>
+              <textarea id="message" name="message" aria-describedby="message-hint"></textarea>
+            </div>
+            <label class="consent-line">
+              <input type="checkbox" name="consent" id="consent" required>
+              <span>I agree that Alan Stone &amp; Company may contact me about this request. <span class="visually-hidden">(required)</span></span>
+            </label>
+            <div class="form-actions">
+              <button class="btn btn-navy" type="submit">Send Request</button>
+              <span class="hint">Or call <a href="tel:+13104443940">310-444-3940</a></span>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top" aria-label="Alan Stone &amp; Company, LLC, back to top">
+            <img src="assets/alan-stone-logo-forDarkBackgrounds-vector.svg" alt="Alan Stone &amp; Company, LLC" width="190" height="40">
+          </a>
+          <p style="margin-top:18px; max-width: 40ch;">Solutions for emerging companies. Investor relations, research, consulting and capital markets introductions since 1989.</p>
+          <p style="margin:0;">Affiliate: <a href="https://www.wallstreetresearch.org/" rel="noopener">WallStreet Research</a></p>
+        </div>
+        <div>
+          <h3>Firm</h3>
+          <ul>
+            <li><a href="#firm">Company profile</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#approach">How we work with clients</a></li>
+            <li><a href="#roadshows">ASC roadshows</a></li>
+            <li><a href="#results">Client case studies</a></li>
+            <li><a href="#team">Management and advisory board</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Offices</h3>
+          <ul>
+            <li>Los Angeles, 310-444-3940</li>
+            <li>New York, 212-521-4102</li>
+            <li>Palm Beach, 561-357-3094</li>
+            <li><a href="mailto:astone@alanstone.com">astone@alanstone.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Market resources</h3>
+          <ul>
+            <li><a href="https://www.nyse.com" rel="noopener">New York Stock Exchange</a></li>
+            <li><a href="https://www.nasdaq.com" rel="noopener">Nasdaq</a></li>
+            <li><a href="https://www.otcmarkets.com" rel="noopener">OTC Markets</a></li>
+            <li><a href="https://www.sec.gov" rel="noopener">U.S. Securities and Exchange Commission</a></li>
+            <li><a href="https://www.finra.org" rel="noopener">FINRA</a></li>
+            <li><a href="https://www.bloomberg.com" rel="noopener">Bloomberg</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin:0;">Copyright 1997 to 2026 Alan Stone &amp; Company, LLC. All rights reserved.</p>
+        <p style="margin:0; display:flex; gap:18px; flex-wrap:wrap;">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of use</a>
+          <button type="button" id="cookie-settings">Cookie preferences</button>
+        </p>
+      </div>
+      <p class="credits">Photographs: Westwood Village at Wilshire Boulevard by Joe Kennedy, Los Angeles Times (<a href="https://creativecommons.org/licenses/by/4.0" rel="noopener">CC BY 4.0</a>); New York Stock Exchange, Broad Street facade by Jakub Hałun (<a href="https://creativecommons.org/licenses/by/4.0" rel="noopener">CC BY 4.0</a>); Wilshire Boulevard through Westwood by Doc Searls (<a href="https://creativecommons.org/licenses/by-sa/2.0" rel="noopener">CC BY-SA 2.0</a>), all via Wikimedia Commons.</p>
+    </div>
+  </footer>
+
+  <div class="cookie-notice" id="cookie-notice" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc" hidden>
+    <h2 id="cookie-title">Cookies on this site</h2>
+    <p id="cookie-desc">We use essential cookies to make the site work. With your permission we would also like to use analytics cookies to understand how visitors use the site, so we can improve it.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-navy" type="button" id="cookie-accept">Accept all</button>
+      <button class="btn btn-outline" type="button" id="cookie-essential">Essential only</button>
+    </div>
+    <p class="policy"><a href="#">Read our cookie policy</a></p>
+  </div>
+
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      var navLinks = nav.querySelectorAll('a[href^="#"]');
+
+      function updateHeader() {
+        var scrolled = window.scrollY > 40;
+        var navOpen = nav.classList.contains('is-open');
+        header.classList.toggle('is-scrolled', scrolled || navOpen);
+      }
+      window.addEventListener('scroll', updateHeader, { passive: true });
+      updateHeader();
+
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.querySelector('.nav-toggle-label').textContent = open ? 'Close' : 'Menu';
+        updateHeader();
+      });
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (nav.classList.contains('is-open')) {
+            nav.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.querySelector('.nav-toggle-label').textContent = 'Menu';
+            updateHeader();
+          }
+        });
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.querySelector('.nav-toggle-label').textContent = 'Menu';
+          toggle.focus();
+          updateHeader();
+        }
+      });
+
+      /* Mark the section in view in the navigation */
+      var sections = document.querySelectorAll('main section[id]');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              navLinks.forEach(function (link) {
+                var match = link.getAttribute('href') === '#' + entry.target.id;
+                if (match) { link.setAttribute('aria-current', 'true'); } else { link.removeAttribute('aria-current'); }
+              });
+            }
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        sections.forEach(function (s) { observer.observe(s); });
+      }
+
+      /* Hero video: respect reduced motion, offer a pause control */
+      var video = document.getElementById('hero-video');
+      var videoToggle = document.getElementById('video-toggle');
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      function setPaused(paused) {
+        if (paused) { video.pause(); } else { video.play().catch(function () {}); }
+        videoToggle.setAttribute('aria-pressed', paused ? 'true' : 'false');
+        videoToggle.textContent = paused ? 'Play video' : 'Pause video';
+      }
+      if (reduceMotion.matches) { setPaused(true); }
+      videoToggle.addEventListener('click', function () { setPaused(!video.paused); });
+      video.addEventListener('error', function () { videoToggle.hidden = true; });
+
+      /* Contact form (mockup: no submission endpoint yet) */
+      var form = document.getElementById('contact-form');
+      var status = document.getElementById('form-status');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var valid = true;
+        var firstInvalid = null;
+        form.querySelectorAll('[required]').forEach(function (field) {
+          var wrapper = field.closest('.field');
+          var ok = field.type === 'checkbox' ? field.checked : field.checkValidity();
+          field.setAttribute('aria-invalid', ok ? 'false' : 'true');
+          if (wrapper) {
+            wrapper.classList.toggle('has-error', !ok);
+            var err = wrapper.querySelector('.error');
+            if (err) { field.setAttribute('aria-describedby', ok ? '' : err.id); }
+          }
+          if (!ok) { valid = false; if (!firstInvalid) { firstInvalid = field; } }
+        });
+        if (!valid) {
+          status.style.color = '#b3261e';
+          status.textContent = 'Please complete the required fields and try again.';
+          firstInvalid.focus();
+          return;
+        }
+        status.style.color = '';
+        status.textContent = 'Thank you. Your request has been received and Alan Stone will be in touch shortly.';
+        form.reset();
+      });
+
+      /* Cookie consent */
+      var notice = document.getElementById('cookie-notice');
+      var KEY = 'asc-cookie-consent';
+      function readConsent() { try { return window.localStorage.getItem(KEY); } catch (err) { return null; } }
+      function saveConsent(value) { try { window.localStorage.setItem(KEY, value); } catch (err) {} }
+      function showNotice() { notice.hidden = false; }
+      function hideNotice() { notice.hidden = true; }
+      if (!readConsent()) { window.setTimeout(showNotice, 900); }
+      document.getElementById('cookie-accept').addEventListener('click', function () { saveConsent('all'); hideNotice(); });
+      document.getElementById('cookie-essential').addEventListener('click', function () { saveConsent('essential'); hideNotice(); });
+      document.getElementById('cookie-settings').addEventListener('click', function () {
+        showNotice();
+        document.getElementById('cookie-accept').focus();
+      });
+    })();
+  </script>
+</body>
+</html>
