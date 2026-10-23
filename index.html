@@ -145,6 +145,23 @@
       .nav-cta .btn-nav { width: 100%; background: var(--navy); color: var(--white); border-color: var(--navy); }
     }
 
+
+    /* Services dropdown */
+    .has-sub { position: relative; }
+    .sub-toggle { background: none; border: 0; color: inherit; font: inherit; font-weight: 500; font-size: 0.98rem; padding: 8px 2px; cursor: pointer; border-bottom: 2px solid transparent; }
+    .sub-toggle::after { content: ""; display: inline-block; width: 6px; height: 6px; margin-left: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-3px) rotate(45deg); }
+    .sub-toggle:hover, .sub-toggle:focus-visible, .sub-toggle[aria-expanded="true"] { border-bottom-color: var(--gold); }
+    .sub-menu { list-style: none; margin: 0; padding: 10px 0; position: absolute; top: calc(100% + 10px); left: -16px; min-width: 260px; background: var(--white); border: 1px solid var(--line); border-top: 3px solid var(--gold); box-shadow: 0 18px 40px rgba(10,22,41,0.18); display: none; }
+    .has-sub.is-open .sub-menu { display: block; }
+    .sub-menu a { display: block; padding: 9px 20px; color: var(--navy) !important; border-bottom: 0 !important; font-size: 0.96rem; }
+    .sub-menu a:hover, .sub-menu a:focus-visible { background: var(--paper); color: var(--navy); }
+    @media (max-width: 900px) {
+      .sub-toggle { display: block; width: 100%; text-align: left; padding: 14px 0; color: var(--navy); font-size: 1.05rem; }
+      .sub-menu { position: static; box-shadow: none; border: 0; border-left: 3px solid var(--gold); padding: 0 0 10px 12px; min-width: 0; }
+      .nav-list .sub-menu li { border-bottom: 0; }
+      .sub-menu a { padding: 10px 8px; }
+    }
+
     /* Hero */
     .hero {
       position: relative; isolation: isolate; overflow: hidden;
@@ -154,13 +171,14 @@
       padding: calc(var(--header-h) + 32px) var(--gutter) 64px;
     }
     .hero-media { position: absolute; inset: 0; z-index: -2; }
-    .hero-media video, .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .hero-media video, .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: brightness(1.12) saturate(1.2); }
     .hero-shade {
       position: absolute; inset: 0; z-index: -1;
       background:
-        linear-gradient(180deg, rgba(10, 22, 41, 0.72) 0%, rgba(10, 22, 41, 0.48) 45%, rgba(10, 22, 41, 0.78) 100%);
+        radial-gradient(ellipse 70% 60% at 50% 50%, rgba(10, 22, 41, 0.55) 0%, rgba(10, 22, 41, 0.25) 100%),
+        linear-gradient(180deg, rgba(10, 22, 41, 0.45) 0%, rgba(10, 22, 41, 0.10) 45%, rgba(10, 22, 41, 0.45) 100%);
     }
-    .hero-inner { max-width: 860px; margin-inline: auto; display: flex; flex-direction: column; align-items: center; }
+    .hero-inner { text-shadow: 0 1px 2px rgba(10,22,41,0.6), 0 2px 18px rgba(10,22,41,0.45); max-width: 860px; margin-inline: auto; display: flex; flex-direction: column; align-items: center; }
     .hero .eyebrow { color: var(--gold-light); margin-bottom: 22px; }
     .hero h1 { margin-bottom: 22px; font-weight: 400; text-wrap: balance; }
     .hero h1 em { font-style: italic; font-weight: 400; color: var(--gold-light); }
@@ -179,7 +197,7 @@
     .firm-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(36px, 6vw, 96px); align-items: start; }
     .firm-copy p { font-size: 1.1rem; }
     .firm-photo figure { margin: 0; }
-    .firm-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+    .firm-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
     .firm-photo figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 10px; }
     .principles { margin-top: clamp(48px, 6vw, 80px); border-top: 1px solid var(--line); }
     .principles dl { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
@@ -369,7 +387,18 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="#firm">The Firm</a></li>
-          <li><a href="#services">Services</a></li>
+          <li class="has-sub">
+            <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services</button>
+            <ul class="sub-menu" id="services-menu">
+              <li><a href="#services">All services</a></li>
+              <li><a href="#investor-relations">Investor relations programs</a></li>
+              <li><a href="#research-coverage">Analyst research coverage</a></li>
+              <li><a href="#roadshow-services">Roadshows and meetings</a></li>
+              <li><a href="#financial-communications">Financial communications</a></li>
+              <li><a href="#investor-intelligence">Investor intelligence</a></li>
+              <li><a href="#capital-markets">Capital raising and listings</a></li>
+            </ul>
+          </li>
           <li><a href="#approach">How We Work</a></li>
           <li><a href="#roadshows">Roadshows</a></li>
           <li><a href="#results">Client Results</a></li>
@@ -487,7 +516,7 @@
           <p class="lede">Public companies pursuing growth have many financial tools available, from asset based financing and public offerings to mergers and acquisitions. The one most often forgotten is the targeted application of investor relations.</p>
         </div>
         <div class="service-grid">
-          <article class="service">
+          <article class="service" id="investor-relations">
             <span class="service-num">01</span>
             <h3>Investor Relations Programs</h3>
             <p>Full service programs that increase brokerage community awareness, add active retail brokers, procure institutional interest and attract quality market makers.</p>
@@ -497,7 +526,7 @@
               <li>Measure results through surveys, response cards and direct feedback</li>
             </ul>
           </article>
-          <article class="service">
+          <article class="service" id="research-coverage">
             <span class="service-num">02</span>
             <h3>Analyst Research Coverage</h3>
             <p>Our focus on research separates the firm from most of the competition. We arrange research report coverage prepared by experienced CFAs who are well regarded in the Wall Street and institutional communities.</p>
@@ -507,7 +536,7 @@
               <li>Distribution through our affiliate, WallStreet Research</li>
             </ul>
           </article>
-          <article class="service">
+          <article class="service" id="roadshow-services">
             <span class="service-num">03</span>
             <h3>Roadshows and One-on-One Meetings</h3>
             <p>Meetings between management and selected brokerage firms, money managers and analysts in leading cities across the country, plus sponsorship at selected investment conferences.</p>
@@ -517,7 +546,7 @@
               <li>Introductions to European capital markets through associates</li>
             </ul>
           </article>
-          <article class="service">
+          <article class="service" id="financial-communications">
             <span class="service-num">04</span>
             <h3>Financial Communications</h3>
             <p>Thorough and effective financial documents, and attention getting press releases disseminated over the wire to Dow Jones, Reuters and the financial press.</p>
@@ -527,7 +556,7 @@
               <li>Media attention from national and regional newspapers, broadcast and newsletters</li>
             </ul>
           </article>
-          <article class="service">
+          <article class="service" id="investor-intelligence">
             <span class="service-num">05</span>
             <h3>Investor Intelligence and Consulting</h3>
             <p>Intelligence gathering for companies seeking professionals who target undervalued and niche industries, combined with consulting on capitalization and corporate strategy.</p>
@@ -537,7 +566,7 @@
               <li>Targets of opportunity such as joint ventures and acquisitions</li>
             </ul>
           </article>
-          <article class="service">
+          <article class="service" id="capital-markets">
             <span class="service-num">06</span>
             <h3>Capital Markets Introductions and Listings</h3>
             <p>After due diligence on a client's objectives, we network senior management with leading investment firms across America and help companies move to more active trading markets.</p>
@@ -923,7 +952,18 @@
           <h3>Firm</h3>
           <ul>
             <li><a href="#firm">Company profile</a></li>
-            <li><a href="#services">Services</a></li>
+            <li class="has-sub">
+            <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services</button>
+            <ul class="sub-menu" id="services-menu">
+              <li><a href="#services">All services</a></li>
+              <li><a href="#investor-relations">Investor relations programs</a></li>
+              <li><a href="#research-coverage">Analyst research coverage</a></li>
+              <li><a href="#roadshow-services">Roadshows and meetings</a></li>
+              <li><a href="#financial-communications">Financial communications</a></li>
+              <li><a href="#investor-intelligence">Investor intelligence</a></li>
+              <li><a href="#capital-markets">Capital raising and listings</a></li>
+            </ul>
+          </li>
             <li><a href="#approach">How we work with clients</a></li>
             <li><a href="#roadshows">ASC roadshows</a></li>
             <li><a href="#results">Client case studies</a></li>
@@ -1012,6 +1052,21 @@
           toggle.querySelector('.nav-toggle-label').textContent = 'Menu';
           toggle.focus();
           updateHeader();
+        }
+      });
+
+
+      /* Services dropdown: disclosure pattern */
+      document.querySelectorAll('.has-sub').forEach(function (item) {
+        var btn = item.querySelector('.sub-toggle');
+        function setOpen(open) { item.classList.toggle('is-open', open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+        btn.addEventListener('click', function () { setOpen(!item.classList.contains('is-open')); });
+        item.addEventListener('focusout', function (e) { if (!item.contains(e.relatedTarget)) { setOpen(false); } });
+        item.addEventListener('keydown', function (e) { if (e.key === 'Escape' && item.classList.contains('is-open')) { e.stopPropagation(); setOpen(false); btn.focus(); } });
+        item.querySelectorAll('.sub-menu a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+        if (window.matchMedia('(hover: hover) and (min-width: 901px)').matches) {
+          item.addEventListener('mouseenter', function () { setOpen(true); });
+          item.addEventListener('mouseleave', function () { setOpen(false); });
         }
       });
 
